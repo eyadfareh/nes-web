@@ -1,17 +1,19 @@
 {
-  "name": "nes-for-web",
+  "name": "nes-web",
   "version": "0.0.1",
   "description": "An (incomplete) nes emulator for the web",
   "main": "src/main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "live-server"
   },
   "author": "",
-  "license": "ISC",
+  "license": "",
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.3",
     "babel-jest": "^29.1.2",
-    "jest": "^29.1.1"
+    "jest": "^29.1.1",
+    "live-server": "^1.2.2"
   }
 }

@@ -12,8 +12,8 @@ class Memory{
 		}
 	}
 
-	constructor(){
-		this.ram = new RAM();
+	constructor(ram = new RAM()){
+		this.ram = ram;
 	}
 }
 export default Memory

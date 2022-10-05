@@ -1,0 +1,20 @@
+// https://www.nesdev.org/wiki/INES
+class ROM{
+	constructor(romFile){
+		var fileContent = new Uint8Array(romFile);
+		let identifier = text.slice(0,4)
+		console.log(identifier)
+		if(text.slice(0,4) !== [0x4e,0x45,0x53,0x1a]){
+//			throw "Not an INES file"
+		}else{
+			this.fileType = "NES";
+		}
+		if(fileContent.length < 16){
+	//		throw "File is too short"
+		}else{
+			var header = fileContent.slice(0,16)
+		}
+		this.prgRomSize = header[4]
+	}
+}
+export default ROM
